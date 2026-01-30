@@ -1,0 +1,287 @@
+
+        <!DOCTYPE html>
+        <html lang="zh-cn">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Geodetector for Heterogeneity</title>
+            <style>
+                body {
+                    text-align: center;
+                }
+                table {
+                    margin: 0 auto; /* 表格居中 */
+                    border-collapse: collapse;
+                    width: 40%; /* 统一设置表格宽度 */
+                }
+                table, th, td {
+                    border: 1px solid #000;
+                }
+                th, td {
+                    padding: 8px;
+                    text-align: center; /* 单元格内容居中 */
+                    height: 50px; 
+                    overflow: hidden; /* 防止内容溢出 */
+                    text-overflow: ellipsis; /* 内容过长时显示省略号 */
+                    white-space: nowrap; /* 强制内容不换行 */
+                }
+                th {
+                    background-color: #f2f2f2;
+                    font-weight: bold; /* 表头加粗 */
+                }
+                tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+                img {
+                width: 80%; /* 与表格宽度一致 */
+                display: block;
+                margin: 20px auto; /* 图片居中 */
+            }
+            </style>
+        </head>
+        <body>
+            <h1>Geodetector Output</h1>
+            <h3>(Please check .xls(x) file for details of Geodetector)</h3>
+            
+                <h2>Factor detector</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            
+                                <th>Variable</th>
+                            
+                                <th>q</th>
+                            
+                                <th>p-value</th>
+                            
+                                <th>number_of_strata</th>
+                            
+                                <th>CI_90</th>
+                            
+                                <th>CI_95</th>
+                            
+                                <th>CI_99</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            <tr>
+                                
+                                    <td>距市驻地距离</td>
+                                
+                                    <td>0.03</td>
+                                
+                                    <td>0.08487746283221809</td>
+                                
+                                    <td>5</td>
+                                
+                                    <td>0.0000-0.0568</td>
+                                
+                                    <td>0.0000-0.0654</td>
+                                
+                                    <td>0.0000-0.0834</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>平均高程</td>
+                                
+                                    <td>0.1317</td>
+                                
+                                    <td><0.01</td>
+                                
+                                    <td>5</td>
+                                
+                                    <td>0.0695-0.1823</td>
+                                
+                                    <td>0.0606-0.1943</td>
+                                
+                                    <td>0.0446-0.2181</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>平均坡度</td>
+                                
+                                    <td>0.1658</td>
+                                
+                                    <td><0.01</td>
+                                
+                                    <td>5</td>
+                                
+                                    <td>0.0983-0.2195</td>
+                                
+                                    <td>0.0881-0.2319</td>
+                                
+                                    <td>0.0694-0.2561</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>人口密度</td>
+                                
+                                    <td>0.0645</td>
+                                
+                                    <td><0.01</td>
+                                
+                                    <td>5</td>
+                                
+                                    <td>0.0189-0.1033</td>
+                                
+                                    <td>0.0139-0.1137</td>
+                                
+                                    <td>0.0059-0.1349</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>灯光指数</td>
+                                
+                                    <td>0.041</td>
+                                
+                                    <td>0.018087416073086282</td>
+                                
+                                    <td>5</td>
+                                
+                                    <td>0.0049-0.0725</td>
+                                
+                                    <td>0.0019-0.0818</td>
+                                
+                                    <td>0.0000-0.1010</td>
+                                
+                            </tr>
+                        
+                    </tbody>
+                </table>
+                <br>
+            
+                <h2>Interaction between variables</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            
+                                <th>Variables Interaction</th>
+                            
+                                <th>Inter_q_value</th>
+                            
+                                <th>Interaction_Type</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            <tr>
+                                
+                                    <td>距市驻地距离 & 平均高程</td>
+                                
+                                    <td>0.1816</td>
+                                
+                                    <td>Nonlinear_enhance</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>距市驻地距离 & 平均坡度</td>
+                                
+                                    <td>0.2488</td>
+                                
+                                    <td>Nonlinear_enhance</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>距市驻地距离 & 人口密度</td>
+                                
+                                    <td>0.112</td>
+                                
+                                    <td>Nonlinear_enhance</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>距市驻地距离 & 灯光指数</td>
+                                
+                                    <td>0.0853</td>
+                                
+                                    <td>Nonlinear_enhance</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>平均高程 & 平均坡度</td>
+                                
+                                    <td>0.2101</td>
+                                
+                                    <td>Bivariate_enhance</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>平均高程 & 人口密度</td>
+                                
+                                    <td>0.1866</td>
+                                
+                                    <td>Bivariate_enhance</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>平均高程 & 灯光指数</td>
+                                
+                                    <td>0.2009</td>
+                                
+                                    <td>Nonlinear_enhance</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>平均坡度 & 人口密度</td>
+                                
+                                    <td>0.2288</td>
+                                
+                                    <td>Bivariate_enhance</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>平均坡度 & 灯光指数</td>
+                                
+                                    <td>0.2322</td>
+                                
+                                    <td>Nonlinear_enhance</td>
+                                
+                            </tr>
+                        
+                            <tr>
+                                
+                                    <td>人口密度 & 灯光指数</td>
+                                
+                                    <td>0.0929</td>
+                                
+                                    <td>Bivariate_enhance</td>
+                                
+                            </tr>
+                        
+                    </tbody>
+                </table>
+                <br>
+            
+            
+                <img src="file://L:/GIS插件/arcgis_pro_geodetector/gd_core/interaction_fig/interaction.jpg" alt="Interaction Image">
+            
+        </body>
+        </html>
+        <a href="file:///L:\��Ŀ\�����ǵ����������ñ仯�������Է���\̽�����ӱ���.xlsx" download>Download Excel File</a>
